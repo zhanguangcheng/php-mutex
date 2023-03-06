@@ -96,7 +96,6 @@ abstract class Mutex
      */
     public function generateRandomToken($length = 16)
     {
-        return 'aaaa';
         if (function_exists('random_bytes')) {
             return bin2hex(random_bytes($length));
         }
